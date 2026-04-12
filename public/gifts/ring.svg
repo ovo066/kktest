@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="goldBand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="30%" stop-color="#FFECB3"/>
+      <stop offset="60%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#F9A825"/>
+    </linearGradient>
+    <linearGradient id="goldSide" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F9A825"/>
+      <stop offset="50%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#F9A825"/>
+    </linearGradient>
+    <linearGradient id="diamond" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E3F2FD"/>
+      <stop offset="30%" stop-color="#BBDEFB"/>
+      <stop offset="60%" stop-color="#E1F5FE"/>
+      <stop offset="100%" stop-color="#81D4FA"/>
+    </linearGradient>
+    <linearGradient id="diamondShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Ring band - ellipse shape -->
+  <ellipse cx="60" cy="78" rx="32" ry="18" fill="none" stroke="url(#goldBand)" stroke-width="10"/>
+  <!-- Inner ring highlight -->
+  <ellipse cx="60" cy="78" rx="32" ry="18" fill="none" stroke="url(#goldSide)" stroke-width="4" opacity="0.4"/>
+  <!-- Diamond setting base -->
+  <path d="M50 62 L54 58 L66 58 L70 62 L60 66 Z" fill="#F9A825"/>
+  <!-- Diamond -->
+  <polygon points="60,30 74,46 60,62 46,46" fill="url(#diamond)"/>
+  <!-- Diamond facets -->
+  <polygon points="60,30 67,46 60,62" fill="#B3E5FC" opacity="0.5"/>
+  <polygon points="60,30 53,46 46,46" fill="#E1F5FE" opacity="0.6"/>
+  <polygon points="60,62 53,46 67,46" fill="#81D4FA" opacity="0.3"/>
+  <!-- Diamond top shine -->
+  <polygon points="60,30 53,40 60,38 67,40" fill="url(#diamondShine)"/>
+  <!-- Sparkles -->
+  <g fill="#FFD54F">
+    <polygon points="80,34 82,30 84,34 82,38" opacity="0.7"/>
+    <polygon points="38,40 40,36 42,40 40,44" opacity="0.5"/>
+    <polygon points="76,50 78,47 80,50 78,53" opacity="0.6"/>
+  </g>
+  <!-- White sparkle dots -->
+  <circle cx="82" cy="28" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="36" cy="36" r="1" fill="white" opacity="0.7"/>
+  <circle cx="78" cy="44" r="1" fill="white" opacity="0.6"/>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bearFur" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C09368"/>
+      <stop offset="100%" stop-color="#8D6540"/>
+    </linearGradient>
+    <linearGradient id="bearLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A76E"/>
+      <stop offset="100%" stop-color="#B8864E"/>
+    </linearGradient>
+    <linearGradient id="bearMuzzle" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFCC80"/>
+      <stop offset="100%" stop-color="#EDBA6A"/>
+    </linearGradient>
+    <linearGradient id="earInner" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFB09A"/>
+      <stop offset="100%" stop-color="#E8907A"/>
+    </linearGradient>
+    <linearGradient id="bowRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5252"/>
+      <stop offset="100%" stop-color="#D32F2F"/>
+    </linearGradient>
+  </defs>
+  <!-- Left ear -->
+  <circle cx="30" cy="28" r="18" fill="url(#bearFur)"/>
+  <circle cx="30" cy="28" r="11" fill="url(#earInner)"/>
+  <!-- Right ear -->
+  <circle cx="90" cy="28" r="18" fill="url(#bearFur)"/>
+  <circle cx="90" cy="28" r="11" fill="url(#earInner)"/>
+  <!-- Head -->
+  <ellipse cx="60" cy="60" rx="42" ry="40" fill="url(#bearFur)"/>
+  <!-- Lighter face area -->
+  <ellipse cx="60" cy="64" rx="32" ry="30" fill="url(#bearLight)" opacity="0.4"/>
+  <!-- Muzzle -->
+  <ellipse cx="60" cy="72" rx="18" ry="14" fill="url(#bearMuzzle)"/>
+  <!-- Nose -->
+  <ellipse cx="60" cy="66" rx="7" ry="5" fill="#5D4037"/>
+  <!-- Nose highlight -->
+  <ellipse cx="58" cy="64.5" rx="3" ry="2" fill="#8D6E63" opacity="0.5"/>
+  <!-- Mouth -->
+  <path d="M54 73 Q60 80 66 73" fill="none" stroke="#8D6E63" stroke-width="2" stroke-linecap="round"/>
+  <line x1="60" y1="71" x2="60" y2="75" stroke="#8D6E63" stroke-width="2" stroke-linecap="round"/>
+  <!-- Left eye -->
+  <ellipse cx="44" cy="52" rx="6" ry="7" fill="#3E2723"/>
+  <ellipse cx="42.5" cy="50" rx="2.5" ry="3" fill="white" opacity="0.7"/>
+  <!-- Right eye -->
+  <ellipse cx="76" cy="52" rx="6" ry="7" fill="#3E2723"/>
+  <ellipse cx="74.5" cy="50" rx="2.5" ry="3" fill="white" opacity="0.7"/>
+  <!-- Cheek blush -->
+  <ellipse cx="34" cy="68" rx="8" ry="5" fill="#FFAB91" opacity="0.4"/>
+  <ellipse cx="86" cy="68" rx="8" ry="5" fill="#FFAB91" opacity="0.4"/>
+  <!-- Bow tie -->
+  <polygon points="46,96 60,102 60,92" fill="url(#bowRed)"/>
+  <polygon points="74,96 60,102 60,92" fill="url(#bowRed)"/>
+  <circle cx="60" cy="97" r="4" fill="#E53935"/>
+  <ellipse cx="59" cy="95.5" rx="1.5" ry="1" fill="#FF8A80" opacity="0.5"/>
+</svg>

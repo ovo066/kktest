@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="kfcRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F44336"/>
+      <stop offset="100%" stop-color="#C62828"/>
+    </linearGradient>
+    <linearGradient id="chickenGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB74D"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="60" cy="108" rx="30" ry="5" fill="#000" fill-opacity="0.08"/>
+  <!-- Bucket -->
+  <path d="M28 42 L92 42 L84 102 L36 102 Z" fill="white" stroke="#E0E0E0" stroke-width="0.5"/>
+  <!-- Red stripes -->
+  <path d="M32 42 L38 42 L34 102 L28 102 Z" fill="url(#kfcRed)" opacity="0.9"/>
+  <path d="M48 42 L54 42 L50 102 L44 102 Z" fill="url(#kfcRed)" opacity="0.9"/>
+  <path d="M64 42 L70 42 L66 102 L60 102 Z" fill="url(#kfcRed)" opacity="0.9"/>
+  <path d="M80 42 L86 42 L82 102 L76 102 Z" fill="url(#kfcRed)" opacity="0.9"/>
+  <!-- Chicken drumsticks poking out -->
+  <path d="M40 42 Q38 28 44 18 Q48 14 50 20 Q52 28 48 38 Z" fill="url(#chickenGold)"/>
+  <circle cx="44" cy="16" r="5" fill="url(#chickenGold)"/>
+  <path d="M65 42 Q68 26 74 18 Q78 14 78 22 Q78 30 72 38 Z" fill="url(#chickenGold)"/>
+  <circle cx="74" cy="16" r="5" fill="url(#chickenGold)"/>
+  <!-- Bucket rim -->
+  <path d="M26 40 Q26 36 30 36 L90 36 Q94 36 94 40 L92 44 L28 44 Z" fill="url(#kfcRed)"/>
+</svg>

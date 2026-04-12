@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bottleBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CE93D8"/>
+      <stop offset="50%" stop-color="#AB47BC"/>
+      <stop offset="100%" stop-color="#7B1FA2"/>
+    </linearGradient>
+    <linearGradient id="bottleShine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.4"/>
+      <stop offset="30%" stop-color="white" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="liquid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E1BEE7"/>
+      <stop offset="100%" stop-color="#CE93D8"/>
+    </linearGradient>
+    <linearGradient id="capGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="50%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#F9A825"/>
+    </linearGradient>
+    <radialGradient id="sparkle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Bottle body -->
+  <path d="M35 48 Q35 42 42 40 L42 40 L78 40 Q85 42 85 48 L88 95 Q88 108 75 108 L45 108 Q32 108 32 95 Z" fill="url(#bottleBody)"/>
+  <!-- Bottle shine -->
+  <path d="M35 48 Q35 42 42 40 L50 40 L47 48 L44 95 Q44 105 48 108 L45 108 Q32 108 32 95 Z" fill="url(#bottleShine)"/>
+  <!-- Liquid shimmer inside -->
+  <ellipse cx="60" cy="85" rx="22" ry="15" fill="url(#liquid)" opacity="0.3"/>
+  <!-- Neck -->
+  <rect x="50" y="28" width="20" height="14" rx="2" fill="url(#bottleBody)"/>
+  <!-- Neck ring -->
+  <rect x="48" y="38" width="24" height="4" rx="2" fill="url(#capGold)"/>
+  <!-- Cap -->
+  <rect x="46" y="12" width="28" height="18" rx="6" fill="url(#capGold)"/>
+  <!-- Cap highlight -->
+  <rect x="48" y="14" width="8" height="14" rx="4" fill="#FFECB3" opacity="0.4"/>
+  <!-- Cap top accent -->
+  <rect x="46" y="12" width="28" height="4" rx="2" fill="#FFECB3" opacity="0.3"/>
+  <!-- Spray nozzle -->
+  <rect x="56" y="24" width="8" height="6" rx="2" fill="#E0E0E0"/>
+  <rect x="58" y="22" width="4" height="4" rx="1" fill="#BDBDBD"/>
+  <!-- Label area -->
+  <rect x="42" y="65" width="36" height="24" rx="4" fill="white" opacity="0.15"/>
+  <ellipse cx="60" cy="77" rx="10" ry="6" fill="white" opacity="0.1"/>
+  <!-- Sparkles -->
+  <circle cx="76" cy="56" r="2" fill="url(#sparkle)"/>
+  <circle cx="42" cy="70" r="1.5" fill="url(#sparkle)"/>
+  <circle cx="72" cy="90" r="1.5" fill="url(#sparkle)"/>
+  <!-- Star sparkle -->
+  <polygon points="80,48 81.5,44 83,48 81.5,52" fill="white" opacity="0.5"/>
+  <polygon points="78,48 83,46.5 78,48 83,49.5" fill="white" opacity="0.3"/>
+</svg>

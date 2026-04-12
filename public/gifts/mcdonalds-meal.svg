@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bunTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFB74D"/>
+      <stop offset="100%" stop-color="#F57C00"/>
+    </linearGradient>
+    <linearGradient id="bunBottom" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFA726"/>
+      <stop offset="100%" stop-color="#EF6C00"/>
+    </linearGradient>
+    <linearGradient id="mcRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F44336"/>
+      <stop offset="100%" stop-color="#C62828"/>
+    </linearGradient>
+  </defs>
+  <!-- Golden arches M -->
+  <path d="M30 22 Q30 6 42 6 Q52 6 52 22 M68 22 Q68 6 78 6 Q90 6 90 22" fill="none" stroke="#FFC107" stroke-width="7" stroke-linecap="round"/>
+  <!-- Burger -->
+  <path d="M22 52 Q60 38 98 52 L96 58 L24 58 Z" fill="url(#bunTop)"/>
+  <!-- Sesame seeds -->
+  <ellipse cx="45" cy="48" rx="3" ry="2" fill="#FFECB3" transform="rotate(-10 45 48)"/>
+  <ellipse cx="62" cy="46" rx="3" ry="2" fill="#FFECB3" transform="rotate(15 62 46)"/>
+  <ellipse cx="78" cy="50" rx="3" ry="2" fill="#FFECB3" transform="rotate(-5 78 50)"/>
+  <!-- Lettuce -->
+  <path d="M20 58 Q30 62 40 57 Q50 62 60 57 Q70 62 80 57 Q90 62 100 58 L100 62 L20 62 Z" fill="#66BB6A"/>
+  <!-- Patty -->
+  <rect x="22" y="62" width="76" height="10" rx="2" fill="#5D4037"/>
+  <!-- Cheese -->
+  <path d="M20 72 L100 72 L98 78 Q80 82 60 78 Q40 82 22 78 Z" fill="#FFC107"/>
+  <!-- Bottom bun -->
+  <path d="M24 78 L96 78 L94 86 Q60 90 26 86 Z" fill="url(#bunBottom)"/>
+  <!-- Fries box -->
+  <rect x="10" y="80" width="28" height="30" rx="3" fill="url(#mcRed)"/>
+  <rect x="14" y="74" width="3" height="12" rx="1.5" fill="#FFC107" transform="rotate(-10 15 80)"/>
+  <rect x="20" y="72" width="3" height="14" rx="1.5" fill="#FFC107" transform="rotate(5 21 80)"/>
+  <rect x="26" y="74" width="3" height="12" rx="1.5" fill="#FFC107" transform="rotate(-8 27 80)"/>
+</svg>

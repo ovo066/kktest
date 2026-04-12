@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="steamBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B2838"/>
+      <stop offset="100%" stop-color="#171A21"/>
+    </linearGradient>
+    <linearGradient id="steamAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#66C0F4"/>
+      <stop offset="100%" stop-color="#1A9FFF"/>
+    </linearGradient>
+  </defs>
+  <!-- Card -->
+  <rect x="14" y="20" width="92" height="80" rx="10" fill="url(#steamBlue)"/>
+  <!-- Controller body -->
+  <path d="M36 55 Q36 48 44 48 L76 48 Q84 48 84 55 L82 72 Q80 78 74 78 L68 78 Q64 78 62 74 L60 70 L58 74 Q56 78 52 78 L46 78 Q40 78 38 72 Z" fill="url(#steamAccent)" opacity="0.9"/>
+  <!-- D-pad -->
+  <rect x="44" y="57" width="4" height="12" rx="1" fill="white" opacity="0.9"/>
+  <rect x="40" y="61" width="12" height="4" rx="1" fill="white" opacity="0.9"/>
+  <!-- Buttons -->
+  <circle cx="74" cy="57" r="3" fill="white" opacity="0.9"/>
+  <circle cx="80" cy="63" r="3" fill="white" opacity="0.9"/>
+  <circle cx="68" cy="63" r="3" fill="white" opacity="0.9"/>
+  <circle cx="74" cy="69" r="3" fill="white" opacity="0.9"/>
+  <!-- STEAM text hint -->
+  <rect x="38" y="86" width="44" height="3" rx="1.5" fill="url(#steamAccent)" opacity="0.5"/>
+</svg>

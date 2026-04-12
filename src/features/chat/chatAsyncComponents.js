@@ -1,0 +1,18 @@
+import { defineAsyncComponent } from 'vue'
+
+export const StickerPanel = defineAsyncComponent(() => import('./components/sticker/StickerPanel.vue'))
+export const StickerManager = defineAsyncComponent(() => import('./components/sticker/StickerManager.vue'))
+export const StickerBatchModal = defineAsyncComponent(() => import('./components/sticker/StickerBatchModal.vue'))
+export const StickerImportOptionsModal = defineAsyncComponent(() => import('./components/sticker/StickerImportOptionsModal.vue'))
+export const StickerEditorModal = defineAsyncComponent(() => import('./components/sticker/StickerEditorModal.vue'))
+export const StickerGroupModal = defineAsyncComponent(() => import('./components/sticker/StickerGroupModal.vue'))
+export const TransferModal = defineAsyncComponent(() => import('./components/TransferModal.vue'))
+export const GiftPickerPanel = defineAsyncComponent(() => import('./components/GiftPickerPanel.vue'))
+export const TransferDetailPanel = defineAsyncComponent(() => import('./components/TransferDetailPanel.vue'))
+export const VoiceModal = defineAsyncComponent(() => import('./components/VoiceModal.vue'))
+export const MeetInviteModal = defineAsyncComponent(() => import('./components/MeetInviteModal.vue'))
+export const MockImageModal = defineAsyncComponent(() => import('./components/MockImageModal.vue'))
+export const CallHistoryModal = defineAsyncComponent(() => import('./components/CallHistoryModal.vue'))
+export const SnoopConsentDialog = defineAsyncComponent(() => import('./components/SnoopConsentDialog.vue'))
+export const ChatMemoryIntegration = defineAsyncComponent(() => import('../../components/integrations/chat/ChatMemoryIntegration.vue'))
+export const ChatReaderIntegration = defineAsyncComponent(() => import('../../components/integrations/chat/ChatReaderIntegration.vue'))

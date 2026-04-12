@@ -1,0 +1,63 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies, build output, and tool caches
+node_modules/
+dist/
+dist-ssr/
+coverage/
+.vite/
+.cache/
+.nyc_output/
+.eslintcache
+*.tsbuildinfo
+*.tgz
+*.local
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Editor directories and files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.orig
+*.rej
+
+# Local deploy/tooling state
+.netlify/
+.vercel/
+
+# Codex/agent temp files
+AGENTS.md
+CLAUDE.md
+tmpclaude-*
+.claude/
+.tmp/
+
+# Internal governance docs (not for public repo)
+docs/governance-implementation-plan.md
+docs/optimization-governance-plan.md
+docs/refactor-tasks.md
+
+# Local planning/template docs (not runtime assets)
+VN_IMPLEMENTATION_PLAN.md
+_vite_template_index.html
+
+# Windows device-name artifact (should never be committed)
+nul

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="frapBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8DDD4" stop-opacity="0.7"/>
+      <stop offset="40%" stop-color="#C4A882"/>
+      <stop offset="100%" stop-color="#8D6E63"/>
+    </linearGradient>
+    <linearGradient id="frapCream" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F5F0EB"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="60" cy="106" rx="26" ry="5" fill="#000" fill-opacity="0.08"/>
+  <path d="M38 38 L82 38 L76 100 L44 100 Z" fill="url(#frapBody)" stroke="#D7CFC8" stroke-width="0.5"/>
+  <path d="M36 36 Q36 32 40 32 L80 32 Q84 32 84 36 L82 40 L38 40 Z" fill="#F5F0EB" stroke="#D7CFC8" stroke-width="0.5"/>
+  <path d="M40 30 Q48 12 60 26 Q72 12 80 30 Z" fill="url(#frapCream)"/>
+  <ellipse cx="60" cy="28" rx="14" ry="5" fill="white"/>
+  <rect x="57" y="4" width="5" height="34" rx="2.5" fill="#00704A"/>
+  <circle cx="60" cy="68" r="12" fill="#00704A" opacity="0.85"/>
+  <circle cx="60" cy="68" r="9" fill="none" stroke="white" stroke-width="0.8"/>
+  <path d="M60 62 L61.5 66 L66 66 L62.5 68.5 L64 73 L60 70 L56 73 L57.5 68.5 L54 66 L58.5 66 Z" fill="white" opacity="0.9"/>
+</svg>

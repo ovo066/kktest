@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="macPink" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F8BBD0"/>
+      <stop offset="100%" stop-color="#F48FB1"/>
+    </linearGradient>
+    <linearGradient id="macGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C8E6C9"/>
+      <stop offset="100%" stop-color="#81C784"/>
+    </linearGradient>
+    <linearGradient id="macYellow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9C4"/>
+      <stop offset="100%" stop-color="#FFF176"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="60" cy="108" rx="32" ry="4" fill="#000" fill-opacity="0.06"/>
+  <!-- Bottom macaron (yellow) -->
+  <ellipse cx="60" cy="94" rx="24" ry="10" fill="url(#macYellow)"/>
+  <rect x="36" y="88" width="48" height="5" rx="2" fill="#FFE082" opacity="0.6"/>
+  <ellipse cx="60" cy="84" rx="24" ry="10" fill="url(#macYellow)"/>
+  <!-- Middle macaron (green) -->
+  <ellipse cx="60" cy="68" rx="24" ry="10" fill="url(#macGreen)"/>
+  <rect x="36" y="62" width="48" height="5" rx="2" fill="#A5D6A7" opacity="0.6"/>
+  <ellipse cx="60" cy="58" rx="24" ry="10" fill="url(#macGreen)"/>
+  <!-- Top macaron (pink) -->
+  <ellipse cx="60" cy="42" rx="24" ry="10" fill="url(#macPink)"/>
+  <rect x="36" y="36" width="48" height="5" rx="2" fill="#F48FB1" opacity="0.5"/>
+  <ellipse cx="60" cy="32" rx="24" ry="10" fill="url(#macPink)"/>
+</svg>

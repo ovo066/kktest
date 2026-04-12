@@ -1,0 +1,21 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="512" height="512" rx="120" fill="url(#paint0_linear_sweet)"/>
+    
+    <rect x="156" y="100" width="200" height="312" rx="40" fill="white" stroke="#E0E0E0" stroke-width="8"/>
+    <rect x="176" y="130" width="160" height="200" rx="10" fill="#F0F8FF"/>
+    <path d="M200 160H290C301.046 160 310 168.954 310 180V210C310 221.046 301.046 230 290 230H200C188.954 230 180 221.046 180 210V180C180 168.954 188.954 160 200 160Z" fill="#00C6FF"/>
+    <path d="M312 190H222C210.954 190 202 198.954 202 210V240C202 251.046 210.954 260 222 260H312C323.046 260 332 251.046 332 240V210C332 198.954 323.046 190 312 190Z" fill="#34C759"/>
+    
+    <circle cx="256" cy="370" r="15" stroke="#E0E0E0" stroke-width="4"/>
+
+    <circle cx="210" cy="115" r="5" fill="#FF9A9E"/>
+    <circle cx="302" cy="115" r="5" fill="#FF9A9E"/>
+
+
+    <defs>
+        <linearGradient id="paint0_linear_sweet" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FF9A9E"/>
+            <stop offset="1" stop-color="#FECFEF"/>
+        </linearGradient>
+    </defs>
+</svg>

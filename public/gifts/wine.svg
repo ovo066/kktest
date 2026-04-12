@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bottleGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4A6741"/>
+      <stop offset="40%" stop-color="#5B7D52"/>
+      <stop offset="100%" stop-color="#3E5838"/>
+    </linearGradient>
+    <linearGradient id="wineRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#B71C1C"/>
+      <stop offset="100%" stop-color="#7F0000"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.3"/>
+      <stop offset="40%" stop-color="white" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="wineInGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C62828"/>
+      <stop offset="100%" stop-color="#8E0000"/>
+    </linearGradient>
+    <linearGradient id="labelBeige" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8E1"/>
+      <stop offset="100%" stop-color="#FFECB3"/>
+    </linearGradient>
+  </defs>
+  <!-- === Wine Bottle (left side) === -->
+  <!-- Bottle body -->
+  <rect x="16" y="50" width="28" height="56" rx="4" fill="url(#bottleGreen)"/>
+  <!-- Bottle neck -->
+  <rect x="24" y="14" width="12" height="28" rx="4" fill="url(#bottleGreen)"/>
+  <!-- Bottle shoulder -->
+  <path d="M16 54 Q16 42 24 38 L24 42 Q20 44 18 50 L16 54 Z" fill="url(#bottleGreen)"/>
+  <path d="M44 54 Q44 42 36 38 L36 42 Q40 44 42 50 L44 54 Z" fill="url(#bottleGreen)"/>
+  <!-- Bottle cap foil -->
+  <rect x="23" y="12" width="14" height="8" rx="3" fill="#FFD54F"/>
+  <rect x="23" y="12" width="14" height="3" rx="1.5" fill="#FFECB3" opacity="0.5"/>
+  <!-- Label -->
+  <rect x="19" y="62" width="22" height="26" rx="2" fill="url(#labelBeige)"/>
+  <!-- Label text lines -->
+  <rect x="23" y="67" width="14" height="2" rx="1" fill="#8D6E63" opacity="0.5"/>
+  <rect x="25" y="72" width="10" height="1.5" rx="0.75" fill="#8D6E63" opacity="0.3"/>
+  <rect x="24" y="76" width="12" height="1.5" rx="0.75" fill="#8D6E63" opacity="0.3"/>
+  <!-- Label decorative circle -->
+  <circle cx="30" cy="83" r="3" fill="none" stroke="#C62828" stroke-width="1" opacity="0.5"/>
+  <!-- Bottle shine -->
+  <rect x="18" y="50" width="5" height="56" rx="2" fill="white" opacity="0.1"/>
+  <!-- === Wine Glass (right side) === -->
+  <!-- Glass bowl -->
+  <path d="M64 48 Q64 38 72 32 L80 32 Q88 38 88 48 L90 62 Q90 66 86 66 L66 66 Q62 66 62 62 Z" fill="url(#glass)"/>
+  <!-- Wine in glass -->
+  <path d="M66 52 Q66 44 74 40 L78 40 Q86 44 86 52 L87 60 Q87 63 84 63 L68 63 Q65 63 65 60 Z" fill="url(#wineInGlass)" opacity="0.8"/>
+  <!-- Wine surface highlight -->
+  <ellipse cx="76" cy="44" rx="9" ry="2" fill="#EF5350" opacity="0.4"/>
+  <!-- Glass stem -->
+  <rect x="74" y="66" width="4" height="24" rx="2" fill="white" opacity="0.25"/>
+  <!-- Glass base -->
+  <ellipse cx="76" cy="92" rx="14" ry="4" fill="white" opacity="0.2"/>
+  <ellipse cx="76" cy="91" rx="14" ry="3.5" fill="white" opacity="0.15"/>
+  <!-- Glass shine -->
+  <path d="M68 42 Q70 38 72 36" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <!-- Glass rim highlight -->
+  <ellipse cx="76" cy="32" rx="8" ry="2" fill="none" stroke="white" stroke-width="0.8" opacity="0.3"/>
+  <!-- Bottom shadow -->
+  <ellipse cx="50" cy="108" rx="38" ry="4" fill="#3E2723" opacity="0.08"/>
+</svg>

@@ -1,0 +1,134 @@
+/* VN Immersive Animations & Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap');
+
+/* ========== Sprite Enter ========== */
+.vn-sprite-enter-fadeIn { animation: vnFadeIn 0.4s ease-out forwards; }
+.vn-sprite-enter-slideLeft { animation: vnSlideFromLeft 0.5s ease-out forwards; }
+.vn-sprite-enter-slideRight { animation: vnSlideFromRight 0.5s ease-out forwards; }
+.vn-sprite-enter-slideUp { animation: vnSlideFromBottom 0.45s ease-out forwards; }
+.vn-sprite-enter-bounce { animation: vnBounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards; }
+
+/* ========== Sprite Emotion (one-shot) ========== */
+.vn-sprite-emotion-shake { animation: vnShake 0.4s ease-in-out; }
+.vn-sprite-emotion-jump { animation: vnJump 0.5s ease-out; }
+.vn-sprite-emotion-nod { animation: vnNod 0.4s ease-in-out; }
+
+/* ========== Sprite Idle ========== */
+.vn-sprite-idle { animation: vnBreathing 3s ease-in-out infinite; }
+
+/* ========== Sprite Exit ========== */
+.vn-sprite-exit-fadeOut { animation: vnFadeOut 0.3s ease-in forwards; }
+.vn-sprite-exit-slideLeft { animation: vnSlideToLeft 0.4s ease-in forwards; }
+.vn-sprite-exit-slideRight { animation: vnSlideToRight 0.4s ease-in forwards; }
+
+/* ========== Keyframes ========== */
+@keyframes vnFadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes vnFadeOut { from { opacity: 1; } to { opacity: 0; } }
+
+@keyframes vnSlideFromLeft {
+  from { opacity: 0; transform: translateX(-30%); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes vnSlideFromRight {
+  from { opacity: 0; transform: translateX(30%); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes vnSlideFromBottom {
+  from { opacity: 0; transform: translateY(15%); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes vnSlideToLeft {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(-30%); }
+}
+@keyframes vnSlideToRight {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(30%); }
+}
+
+@keyframes vnBounceIn {
+  0% { opacity: 0; transform: scale(0.8) translateY(10%); }
+  60% { opacity: 1; transform: scale(1.05) translateY(-3%); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes vnShake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+
+@keyframes vnJump {
+  0%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-20px); }
+  60% { transform: translateY(-18px); }
+}
+
+@keyframes vnNod {
+  0%, 100% { transform: rotate(0deg); }
+  30% { transform: rotate(3deg); }
+  70% { transform: rotate(-2deg); }
+}
+
+@keyframes vnBreathing {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+/* ========== Background Transition ========== */
+.vn-bg-transition-fade { animation: vnBgFade 0.8s ease-in-out; }
+
+@keyframes vnBgFade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* ========== Background Zoom ========== */
+.vn-bg-zoom {
+  animation: vnBgZoom 60s ease-in-out infinite alternate;
+}
+
+@keyframes vnBgZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.05); }
+}
+
+/* ========== Utility ========== */
+.vn-spin { animation: vnSpin 1s linear infinite; }
+@keyframes vnSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+/* ========== Dialog & UI Transitions ========== */
+.vn-dialog-enter { animation: vnDialogSlideUp 0.35s cubic-bezier(0.32, 0.72, 0, 1) forwards; }
+.vn-dialog-exit { animation: vnDialogSlideDown 0.25s ease-in forwards; }
+
+@keyframes vnDialogSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes vnDialogSlideDown {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(20px); }
+}
+
+/* ========== Choice Slide In ========== */
+.vn-choice-enter {
+  animation: vnChoiceSlide 0.4s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+  opacity: 0;
+}
+
+@keyframes vnChoiceSlide {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* ========== Pulse for indicators ========== */
+.vn-pulse {
+  animation: vnPulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes vnPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}

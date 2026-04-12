@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="pizzaBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFC107"/>
+      <stop offset="100%" stop-color="#FF8F00"/>
+    </linearGradient>
+    <linearGradient id="pizzaCrust" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D7A86E"/>
+      <stop offset="100%" stop-color="#8D6E63"/>
+    </linearGradient>
+    <linearGradient id="sauce" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5722"/>
+      <stop offset="100%" stop-color="#D84315"/>
+    </linearGradient>
+  </defs>
+  <!-- Pizza slice -->
+  <path d="M60 16 L18 100 L102 100 Z" fill="url(#pizzaBase)"/>
+  <!-- Crust -->
+  <path d="M18 100 Q60 112 102 100 L106 106 Q60 118 14 106 Z" fill="url(#pizzaCrust)"/>
+  <!-- Sauce -->
+  <path d="M60 28 L28 92 L92 92 Z" fill="url(#sauce)" opacity="0.3"/>
+  <!-- Cheese stretching -->
+  <path d="M45 55 Q42 48 46 42" fill="none" stroke="#FFF176" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <path d="M70 60 Q74 52 72 46" fill="none" stroke="#FFF176" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <!-- Pepperoni -->
+  <circle cx="52" cy="62" r="7" fill="#D32F2F"/>
+  <circle cx="72" cy="78" r="7" fill="#D32F2F"/>
+  <circle cx="56" cy="84" r="6" fill="#D32F2F"/>
+  <!-- Green pepper -->
+  <path d="M40 78 Q44 72 48 78" fill="none" stroke="#4CAF50" stroke-width="3" stroke-linecap="round"/>
+  <path d="M80 88 Q84 82 88 88" fill="none" stroke="#4CAF50" stroke-width="3" stroke-linecap="round"/>
+</svg>

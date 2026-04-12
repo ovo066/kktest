@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="spGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1ED760"/>
+      <stop offset="100%" stop-color="#1DB954"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="48" fill="url(#spGreen)"/>
+  <!-- Three sound wave arcs -->
+  <path d="M34 46 Q60 34 86 46" fill="none" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <path d="M38 62 Q60 52 82 62" fill="none" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <path d="M42 78 Q60 68 78 78" fill="none" stroke="white" stroke-width="6" stroke-linecap="round"/>
+</svg>

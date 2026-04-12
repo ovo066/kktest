@@ -1,0 +1,34 @@
+{
+  "extends": "./jsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "noEmit": true,
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "verbatimModuleSyntax": true,
+    "types": []
+  },
+  "include": [
+    "src/composables/useStorage.js",
+    "src/composables/storage/**/*.js",
+    "src/composables/storage/**/*.d.ts",
+    "src/features/meet/composables/useMeetApi.js",
+    "src/features/meet/composables/useMeetParser.js",
+    "src/features/meet/composables/meetPlayer/**/*.js",
+    "src/features/meet/composables/meetPlayer/**/*.d.ts",
+    "src/features/meet/composables/meetResources/**/*.js",
+    "src/features/meet/composables/meetResources/**/*.d.ts",
+    "src/features/meet/composables/meetInstructionContracts.d.ts"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "src/**/*.test.js"
+  ]
+}

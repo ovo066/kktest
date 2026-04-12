@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="wrapPink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8BBD0"/>
+      <stop offset="100%" stop-color="#F06292"/>
+    </linearGradient>
+    <linearGradient id="wrapInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE4EC"/>
+      <stop offset="100%" stop-color="#F8BBD0"/>
+    </linearGradient>
+    <linearGradient id="flowerRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5252"/>
+      <stop offset="100%" stop-color="#D32F2F"/>
+    </linearGradient>
+    <linearGradient id="flowerPink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF80AB"/>
+      <stop offset="100%" stop-color="#EC407A"/>
+    </linearGradient>
+    <linearGradient id="flowerYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF176"/>
+      <stop offset="100%" stop-color="#FFD54F"/>
+    </linearGradient>
+    <linearGradient id="flowerOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFAB91"/>
+      <stop offset="100%" stop-color="#FF7043"/>
+    </linearGradient>
+    <linearGradient id="bqLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#81C784"/>
+      <stop offset="100%" stop-color="#388E3C"/>
+    </linearGradient>
+  </defs>
+  <!-- Wrapper paper - cone shape -->
+  <path d="M20 65 L60 115 L100 65 Q102 60 98 58 L22 58 Q18 60 20 65 Z" fill="url(#wrapPink)"/>
+  <!-- Inner wrapper -->
+  <path d="M28 64 L60 108 L92 64 Q93 60 90 59 L30 59 Q27 60 28 64 Z" fill="url(#wrapInner)" opacity="0.5"/>
+  <!-- Wrapper fold lines -->
+  <path d="M40 62 L58 100" fill="none" stroke="#EC407A" stroke-width="0.8" opacity="0.3"/>
+  <path d="M80 62 L62 100" fill="none" stroke="#EC407A" stroke-width="0.8" opacity="0.3"/>
+  <!-- Wrapper ribbon -->
+  <ellipse cx="60" cy="72" rx="16" ry="4" fill="#AB47BC" opacity="0.6"/>
+  <!-- Stems -->
+  <line x1="40" y1="55" x2="44" y2="68" stroke="#4CAF50" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="60" y1="45" x2="60" y2="68" stroke="#4CAF50" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="80" y1="55" x2="76" y2="68" stroke="#4CAF50" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="48" y1="48" x2="50" y2="65" stroke="#4CAF50" stroke-width="2" stroke-linecap="round"/>
+  <line x1="72" y1="48" x2="70" y2="65" stroke="#4CAF50" stroke-width="2" stroke-linecap="round"/>
+  <!-- Leaves -->
+  <ellipse cx="34" cy="56" rx="8" ry="4" transform="rotate(-20 34 56)" fill="url(#bqLeaf)"/>
+  <ellipse cx="86" cy="56" rx="8" ry="4" transform="rotate(20 86 56)" fill="url(#bqLeaf)"/>
+  <ellipse cx="50" cy="52" rx="6" ry="3" transform="rotate(-30 50 52)" fill="url(#bqLeaf)"/>
+  <ellipse cx="70" cy="52" rx="6" ry="3" transform="rotate(30 70 52)" fill="url(#bqLeaf)"/>
+  <!-- Baby breath small flowers -->
+  <circle cx="32" cy="48" r="2.5" fill="white" opacity="0.8"/>
+  <circle cx="36" cy="44" r="2" fill="white" opacity="0.7"/>
+  <circle cx="88" cy="48" r="2.5" fill="white" opacity="0.8"/>
+  <circle cx="84" cy="44" r="2" fill="white" opacity="0.7"/>
+  <!-- Flower 1 - center red rose -->
+  <circle cx="60" cy="36" r="12" fill="url(#flowerRed)"/>
+  <circle cx="60" cy="36" r="8" fill="#FF7070"/>
+  <circle cx="60" cy="36" r="4" fill="#FF9090"/>
+  <!-- Flower 2 - left pink -->
+  <circle cx="40" cy="42" r="10" fill="url(#flowerPink)"/>
+  <circle cx="40" cy="42" r="6" fill="#FF9FC4"/>
+  <circle cx="40" cy="42" r="3" fill="#FFC1D8"/>
+  <!-- Flower 3 - right orange -->
+  <circle cx="80" cy="42" r="10" fill="url(#flowerOrange)"/>
+  <circle cx="80" cy="42" r="6" fill="#FFBDA8"/>
+  <circle cx="80" cy="42" r="3" fill="#FFD5C8"/>
+  <!-- Flower 4 - top left yellow -->
+  <circle cx="48" cy="28" r="9" fill="url(#flowerYellow)"/>
+  <circle cx="48" cy="28" r="5.5" fill="#FFF59D"/>
+  <circle cx="48" cy="28" r="3" fill="#FFFDE7"/>
+  <!-- Flower 5 - top right pink -->
+  <circle cx="72" cy="28" r="9" fill="url(#flowerPink)"/>
+  <circle cx="72" cy="28" r="5.5" fill="#FF9FC4"/>
+  <circle cx="72" cy="28" r="3" fill="#FFC1D8"/>
+  <!-- Top small flower -->
+  <circle cx="60" cy="20" r="6" fill="url(#flowerYellow)"/>
+  <circle cx="60" cy="20" r="3.5" fill="#FFF9C4"/>
+</svg>

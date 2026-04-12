@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="chocoBox" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8D6E63"/>
+      <stop offset="100%" stop-color="#5D4037"/>
+    </linearGradient>
+    <linearGradient id="chocoLid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A1887F"/>
+      <stop offset="100%" stop-color="#795548"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF8A80"/>
+      <stop offset="100%" stop-color="#E53935"/>
+    </linearGradient>
+    <linearGradient id="chocoFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6D4C41"/>
+      <stop offset="100%" stop-color="#4E342E"/>
+    </linearGradient>
+  </defs>
+  <!-- Box shadow -->
+  <rect x="18" y="52" width="84" height="54" rx="5" fill="#3E2723" opacity="0.2" transform="translate(2,2)"/>
+  <!-- Box bottom -->
+  <rect x="18" y="52" width="84" height="54" rx="5" fill="url(#chocoBox)"/>
+  <!-- Chocolates inside (visible row) -->
+  <circle cx="40" cy="58" r="10" fill="url(#chocoFill)"/>
+  <circle cx="60" cy="58" r="10" fill="url(#chocoFill)"/>
+  <circle cx="80" cy="58" r="10" fill="url(#chocoFill)"/>
+  <!-- Chocolate highlights -->
+  <ellipse cx="37" cy="55" rx="4" ry="3" fill="#8D6E63" opacity="0.5"/>
+  <ellipse cx="57" cy="55" rx="4" ry="3" fill="#8D6E63" opacity="0.5"/>
+  <ellipse cx="77" cy="55" rx="4" ry="3" fill="#8D6E63" opacity="0.5"/>
+  <!-- Chocolate swirl decorations -->
+  <path d="M37 58 Q40 54 43 58" fill="none" stroke="#A1887F" stroke-width="1" opacity="0.6"/>
+  <path d="M57 58 Q60 54 63 58" fill="none" stroke="#A1887F" stroke-width="1" opacity="0.6"/>
+  <path d="M77 58 Q80 54 83 58" fill="none" stroke="#A1887F" stroke-width="1" opacity="0.6"/>
+  <!-- Lid (angled open) -->
+  <rect x="18" y="18" width="84" height="36" rx="5" fill="url(#chocoLid)"/>
+  <!-- Lid edge highlight -->
+  <rect x="18" y="18" width="84" height="4" rx="2" fill="#BCAAA4" opacity="0.4"/>
+  <!-- Horizontal ribbon -->
+  <rect x="18" y="30" width="84" height="10" fill="url(#ribbon)"/>
+  <!-- Vertical ribbon -->
+  <rect x="55" y="18" width="10" height="36" fill="url(#ribbon)"/>
+  <!-- Ribbon bow - loops -->
+  <ellipse cx="50" cy="22" rx="10" ry="7" transform="rotate(-20 50 22)" fill="#FF5252"/>
+  <ellipse cx="70" cy="22" rx="10" ry="7" transform="rotate(20 70 22)" fill="#FF5252"/>
+  <!-- Bow center knot -->
+  <circle cx="60" cy="24" r="5" fill="#E53935"/>
+  <!-- Bow ribbon tails -->
+  <path d="M55 28 Q48 38 44 44" fill="none" stroke="#FF5252" stroke-width="3" stroke-linecap="round"/>
+  <path d="M65 28 Q72 38 76 44" fill="none" stroke="#FF5252" stroke-width="3" stroke-linecap="round"/>
+</svg>

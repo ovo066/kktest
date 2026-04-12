@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="cakeBase" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFCC80"/>
+      <stop offset="100%" stop-color="#F4A236"/>
+    </linearGradient>
+    <linearGradient id="cakeTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE0B2"/>
+      <stop offset="100%" stop-color="#FFCC80"/>
+    </linearGradient>
+    <linearGradient id="frosting" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF80AB"/>
+      <stop offset="100%" stop-color="#F06292"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF176"/>
+      <stop offset="50%" stop-color="#FFB74D"/>
+      <stop offset="100%" stop-color="#FF7043"/>
+    </linearGradient>
+  </defs>
+  <!-- Plate -->
+  <ellipse cx="60" cy="102" rx="48" ry="8" fill="#E0E0E0"/>
+  <ellipse cx="60" cy="100" rx="48" ry="8" fill="#F5F5F5"/>
+  <!-- Bottom cake layer -->
+  <rect x="20" y="72" width="80" height="28" rx="6" fill="url(#cakeBase)"/>
+  <!-- Bottom frosting drip -->
+  <path d="M20 78 Q20 72 26 72 L94 72 Q100 72 100 78 L100 76 Q92 82 85 76 Q78 82 70 76 Q62 82 55 76 Q48 82 40 76 Q32 82 26 76 Z" fill="url(#frosting)"/>
+  <!-- Top cake layer -->
+  <rect x="30" y="50" width="60" height="24" rx="5" fill="url(#cakeTop)"/>
+  <!-- Top frosting drip -->
+  <path d="M30 56 Q30 50 35 50 L85 50 Q90 50 90 56 L90 54 Q84 60 78 54 Q72 60 66 54 Q60 60 54 54 Q48 60 42 54 Q36 60 30 54 Z" fill="url(#frosting)"/>
+  <!-- Candle -->
+  <rect x="57" y="28" width="6" height="24" rx="2" fill="#64B5F6"/>
+  <rect x="58" y="28" width="2" height="24" rx="1" fill="#90CAF9" opacity="0.5"/>
+  <!-- Wick -->
+  <rect x="59" y="24" width="2" height="6" rx="1" fill="#5D4037"/>
+  <!-- Flame -->
+  <ellipse cx="60" cy="20" rx="5" ry="8" fill="url(#flame)"/>
+  <ellipse cx="60" cy="19" rx="3" ry="5" fill="#FFF9C4"/>
+  <!-- Decorations on cake -->
+  <circle cx="38" cy="62" r="2.5" fill="#FF80AB"/>
+  <circle cx="50" cy="62" r="2.5" fill="#FFB74D"/>
+  <circle cx="62" cy="62" r="2.5" fill="#FF80AB"/>
+  <circle cx="74" cy="62" r="2.5" fill="#FFB74D"/>
+  <circle cx="82" cy="62" r="2.5" fill="#FF80AB"/>
+</svg>

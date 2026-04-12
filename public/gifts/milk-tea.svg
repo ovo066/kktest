@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="teaCup" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F8BBD0"/>
+      <stop offset="50%" stop-color="#CE93D8"/>
+      <stop offset="100%" stop-color="#AB47BC"/>
+    </linearGradient>
+    <linearGradient id="teaLid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F3E5F5"/>
+      <stop offset="100%" stop-color="#E1BEE7"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="60" cy="108" rx="26" ry="4" fill="#000" fill-opacity="0.08"/>
+  <path d="M38 30 Q38 26 42 26 L78 26 Q82 26 82 30 L76 104 L44 104 Z" fill="url(#teaCup)"/>
+  <path d="M36 24 Q36 20 40 20 L80 20 Q84 20 84 24 L82 30 L38 30 Z" fill="url(#teaLid)" stroke="#D1C4E9" stroke-width="0.5"/>
+  <!-- Straw -->
+  <rect x="68" y="4" width="4" height="26" rx="2" fill="#AB47BC" opacity="0.9"/>
+  <!-- Boba pearls -->
+  <circle cx="50" cy="88" r="4.5" fill="#4E342E" opacity="0.85"/>
+  <circle cx="60" cy="92" r="4.5" fill="#4E342E" opacity="0.85"/>
+  <circle cx="70" cy="86" r="4.5" fill="#4E342E" opacity="0.85"/>
+  <circle cx="55" cy="80" r="4.5" fill="#4E342E" opacity="0.85"/>
+  <circle cx="65" cy="96" r="4.5" fill="#4E342E" opacity="0.85"/>
+  <!-- Grape decoration -->
+  <circle cx="48" cy="52" r="5" fill="#7B1FA2" opacity="0.4"/>
+  <circle cx="58" cy="48" r="5" fill="#7B1FA2" opacity="0.3"/>
+  <circle cx="68" cy="54" r="5" fill="#7B1FA2" opacity="0.35"/>
+</svg>

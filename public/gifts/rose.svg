@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="roseRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4D6A"/>
+      <stop offset="100%" stop-color="#C41E3A"/>
+    </linearGradient>
+    <linearGradient id="roseInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7088"/>
+      <stop offset="100%" stop-color="#E8365D"/>
+    </linearGradient>
+    <linearGradient id="stemGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4CAF50"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="leafGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#66BB6A"/>
+      <stop offset="100%" stop-color="#388E3C"/>
+    </linearGradient>
+  </defs>
+  <!-- Stem -->
+  <rect x="57" y="58" width="6" height="48" rx="3" fill="url(#stemGreen)"/>
+  <!-- Left leaf -->
+  <ellipse cx="48" cy="82" rx="14" ry="7" transform="rotate(-30 48 82)" fill="url(#leafGreen)"/>
+  <!-- Right leaf -->
+  <ellipse cx="72" cy="75" rx="13" ry="6" transform="rotate(25 72 75)" fill="url(#leafGreen)"/>
+  <!-- Outer petals -->
+  <ellipse cx="46" cy="40" rx="16" ry="20" transform="rotate(-15 46 40)" fill="url(#roseRed)"/>
+  <ellipse cx="74" cy="40" rx="16" ry="20" transform="rotate(15 74 40)" fill="url(#roseRed)"/>
+  <ellipse cx="52" cy="30" rx="14" ry="18" transform="rotate(-30 52 30)" fill="url(#roseRed)"/>
+  <ellipse cx="68" cy="30" rx="14" ry="18" transform="rotate(30 68 30)" fill="url(#roseRed)"/>
+  <!-- Center petals -->
+  <ellipse cx="55" cy="38" rx="10" ry="15" transform="rotate(-10 55 38)" fill="url(#roseInner)"/>
+  <ellipse cx="65" cy="38" rx="10" ry="15" transform="rotate(10 65 38)" fill="url(#roseInner)"/>
+  <!-- Rose center -->
+  <ellipse cx="60" cy="36" rx="8" ry="10" fill="#FF8A9E"/>
+  <ellipse cx="60" cy="34" rx="5" ry="6" fill="#FFB0BF"/>
+  <!-- Sepal -->
+  <path d="M50 55 Q55 48 60 55 Q65 48 70 55 L65 60 Q60 54 55 60 Z" fill="url(#leafGreen)"/>
+</svg>

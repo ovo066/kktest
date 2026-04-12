@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="luckinBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4FC3F7"/>
+      <stop offset="100%" stop-color="#0288D1"/>
+    </linearGradient>
+    <linearGradient id="luckinCup" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F5F5F5"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="60" cy="106" rx="28" ry="5" fill="#000" fill-opacity="0.08"/>
+  <path d="M37 32 L83 32 L77 100 L43 100 Z" fill="url(#luckinCup)" stroke="#E0E0E0" stroke-width="0.5"/>
+  <path d="M34 28 Q34 24 38 24 L82 24 Q86 24 86 28 L84 34 L36 34 Z" fill="url(#luckinBlue)"/>
+  <circle cx="60" cy="65" r="18" fill="url(#luckinBlue)"/>
+  <circle cx="60" cy="65" r="15" fill="none" stroke="white" stroke-width="1"/>
+  <!-- Deer antler silhouette -->
+  <path d="M53 60 Q50 52 48 48 M53 60 Q55 54 53 50 M67 60 Q70 52 72 48 M67 60 Q65 54 67 50" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="60" cy="68" r="6" fill="none" stroke="white" stroke-width="1.5"/>
+  <path d="M48 18 Q46 10 50 6" fill="none" stroke="#B3E5FC" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M60 16 Q58 8 62 4" fill="none" stroke="#B3E5FC" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M72 18 Q70 10 74 6" fill="none" stroke="#B3E5FC" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+</svg>

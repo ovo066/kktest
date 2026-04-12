@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="cupBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F5F0EB"/>
+    </linearGradient>
+    <linearGradient id="sbGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00704A"/>
+      <stop offset="100%" stop-color="#004D33"/>
+    </linearGradient>
+    <linearGradient id="sleeve" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8D6E63"/>
+      <stop offset="100%" stop-color="#5D4037"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="60" cy="106" rx="28" ry="5" fill="#000" fill-opacity="0.08"/>
+  <path d="M37 32 L83 32 L77 100 L43 100 Z" fill="url(#cupBody)" stroke="#E0DCD7" stroke-width="0.5"/>
+  <path d="M34 28 Q34 24 38 24 L82 24 Q86 24 86 28 L84 34 L36 34 Z" fill="#F5F0EB" stroke="#E0DCD7" stroke-width="0.5"/>
+  <ellipse cx="60" cy="27" rx="8" ry="2.5" fill="#D7CFC8"/>
+  <circle cx="60" cy="62" r="15" fill="url(#sbGreen)"/>
+  <circle cx="60" cy="62" r="12" fill="none" stroke="white" stroke-width="1"/>
+  <path d="M60 53 L62 59 L68 59 L63 63 L65 69 L60 65 L55 69 L57 63 L52 59 L58 59 Z" fill="white"/>
+  <path d="M40 75 L42 94 L78 94 L80 75 Z" fill="url(#sleeve)" opacity="0.6" rx="2"/>
+  <path d="M48 18 Q46 10 50 6" fill="none" stroke="#D4CFC8" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M60 16 Q58 8 62 4" fill="none" stroke="#D4CFC8" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M72 18 Q70 10 74 6" fill="none" stroke="#D4CFC8" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+</svg>

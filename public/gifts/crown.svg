@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="crownGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="40%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#F9A825"/>
+    </linearGradient>
+    <linearGradient id="crownDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+    <linearGradient id="gemRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF5350"/>
+      <stop offset="100%" stop-color="#B71C1C"/>
+    </linearGradient>
+    <linearGradient id="gemBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#42A5F5"/>
+      <stop offset="100%" stop-color="#1565C0"/>
+    </linearGradient>
+    <linearGradient id="gemGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#66BB6A"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+  </defs>
+  <!-- Crown body -->
+  <path d="M16 85 L16 50 L34 65 L60 25 L86 65 L104 50 L104 85 Z" fill="url(#crownGold)"/>
+  <!-- Crown inner shadow -->
+  <path d="M16 85 L16 50 L34 65 L60 25 L86 65 L104 50 L104 85 Z" fill="url(#crownDark)" opacity="0.15"/>
+  <!-- Crown band at bottom -->
+  <rect x="16" y="78" width="88" height="12" rx="2" fill="url(#crownDark)" opacity="0.3"/>
+  <rect x="16" y="78" width="88" height="10" rx="2" fill="url(#crownGold)"/>
+  <!-- Band highlight -->
+  <rect x="16" y="78" width="88" height="3" rx="1.5" fill="#FFECB3" opacity="0.5"/>
+  <!-- Crown point tips - circles -->
+  <circle cx="16" cy="48" r="5" fill="#FFD54F"/>
+  <circle cx="60" cy="23" r="6" fill="#FFD54F"/>
+  <circle cx="104" cy="48" r="5" fill="#FFD54F"/>
+  <!-- Gems on band -->
+  <ellipse cx="38" cy="83" rx="6" ry="5" fill="url(#gemRed)"/>
+  <ellipse cx="60" cy="83" rx="7" ry="5" fill="url(#gemBlue)"/>
+  <ellipse cx="82" cy="83" rx="6" ry="5" fill="url(#gemGreen)"/>
+  <!-- Gem highlights -->
+  <ellipse cx="36" cy="81" rx="2.5" ry="1.5" fill="white" opacity="0.5"/>
+  <ellipse cx="58" cy="81" rx="3" ry="1.5" fill="white" opacity="0.5"/>
+  <ellipse cx="80" cy="81" rx="2.5" ry="1.5" fill="white" opacity="0.5"/>
+  <!-- Top gem on center point -->
+  <circle cx="60" cy="23" r="4" fill="url(#gemRed)"/>
+  <ellipse cx="59" cy="21.5" rx="1.5" ry="1" fill="white" opacity="0.6"/>
+  <!-- Crown edge highlights -->
+  <path d="M20 82 L20 52 L36 66 L60 28 L84 66 L100 52 L100 82" fill="none" stroke="#FFECB3" stroke-width="1.5" opacity="0.4"/>
+  <!-- Bottom shadow -->
+  <ellipse cx="60" cy="95" rx="42" ry="5" fill="#F9A825" opacity="0.15"/>
+</svg>

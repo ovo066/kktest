@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="nfRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E50914"/>
+      <stop offset="100%" stop-color="#B20710"/>
+    </linearGradient>
+    <linearGradient id="nfShade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E50914"/>
+      <stop offset="100%" stop-color="#831010"/>
+    </linearGradient>
+  </defs>
+  <!-- Background card -->
+  <rect x="16" y="16" width="88" height="88" rx="16" fill="#141414"/>
+  <!-- N letter -->
+  <path d="M36 30 L48 30 L48 90 L36 90 Z" fill="url(#nfRed)"/>
+  <path d="M72 30 L84 30 L84 90 L72 90 Z" fill="url(#nfRed)"/>
+  <path d="M36 30 L48 30 L84 90 L72 90 Z" fill="url(#nfShade)"/>
+  <!-- Shine -->
+  <path d="M36 30 L48 30 L48 50 Z" fill="#E50914" opacity="0.8"/>
+</svg>

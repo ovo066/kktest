@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="ticketGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#FF8F00"/>
+    </linearGradient>
+    <linearGradient id="ticketDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5D4037"/>
+      <stop offset="100%" stop-color="#3E2723"/>
+    </linearGradient>
+  </defs>
+  <!-- Ticket body -->
+  <path d="M12 36 L108 36 L108 56 Q100 56 100 64 Q100 72 108 72 L108 92 L12 92 L12 72 Q20 72 20 64 Q20 56 12 56 Z" fill="url(#ticketGold)"/>
+  <!-- Perforation line -->
+  <path d="M76 36 L76 92" stroke="#E65100" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+  <!-- Film reel icon -->
+  <circle cx="44" cy="64" r="16" fill="url(#ticketDark)"/>
+  <circle cx="44" cy="64" r="5" fill="url(#ticketGold)"/>
+  <circle cx="44" cy="52" r="2.5" fill="url(#ticketGold)"/>
+  <circle cx="44" cy="76" r="2.5" fill="url(#ticketGold)"/>
+  <circle cx="32" cy="64" r="2.5" fill="url(#ticketGold)"/>
+  <circle cx="56" cy="64" r="2.5" fill="url(#ticketGold)"/>
+  <!-- Star on stub -->
+  <path d="M92 64 L94 58 L98 55 L94 52 L92 46 L90 52 L86 55 L90 58 Z" fill="#5D4037"/>
+  <!-- Text lines on stub -->
+  <rect x="84" y="72" width="16" height="2" rx="1" fill="#5D4037" opacity="0.4"/>
+  <rect x="86" y="78" width="12" height="2" rx="1" fill="#5D4037" opacity="0.3"/>
+</svg>

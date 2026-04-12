@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="cone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE0B2"/>
+      <stop offset="100%" stop-color="#D7A86E"/>
+    </linearGradient>
+    <linearGradient id="scoopPink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE4EC"/>
+      <stop offset="100%" stop-color="#F48FB1"/>
+    </linearGradient>
+    <linearGradient id="scoopBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E1F5FE"/>
+      <stop offset="100%" stop-color="#81D4FA"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="60" cy="112" rx="10" ry="3" fill="#000" fill-opacity="0.08"/>
+  <!-- Cone -->
+  <path d="M40 60 L60 112 L80 60 Z" fill="url(#cone)"/>
+  <!-- Cone cross pattern -->
+  <path d="M44 65 L68 95 M56 95 L76 65 M46 70 L74 70 M48 80 L72 80" fill="none" stroke="#C8A06E" stroke-width="0.8" opacity="0.4"/>
+  <!-- Bottom scoop (blue) -->
+  <circle cx="60" cy="50" r="22" fill="url(#scoopBlue)"/>
+  <circle cx="52" cy="46" r="3" fill="white" opacity="0.3"/>
+  <!-- Top scoop (pink) -->
+  <circle cx="60" cy="30" r="18" fill="url(#scoopPink)"/>
+  <circle cx="54" cy="26" r="2.5" fill="white" opacity="0.3"/>
+  <!-- Cherry -->
+  <circle cx="60" cy="14" r="5" fill="#E53935"/>
+  <path d="M60 14 Q58 8 62 4" fill="none" stroke="#4CAF50" stroke-width="2" stroke-linecap="round"/>
+</svg>

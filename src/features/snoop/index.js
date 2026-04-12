@@ -1,0 +1,1 @@
+export { snoopRoutes } from './routes'

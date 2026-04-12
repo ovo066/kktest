@@ -1,0 +1,421 @@
+/* ===== 通话动画 & 液态玻璃设计系统 ===== */
+
+/* ---- 液态玻璃基础类 (Liquid Glass) ---- */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(24px) saturate(1.2);
+  -webkit-backdrop-filter: blur(24px) saturate(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.glass-heavy {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40px) saturate(1.4);
+  -webkit-backdrop-filter: blur(40px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 16px 48px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.glass-btn {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.glass-btn:active {
+  transform: scale(0.92);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ---- 液态光泽效果 ---- */
+.glass-shine {
+  position: relative;
+  overflow: hidden;
+}
+.glass-shine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.04),
+    transparent
+  );
+  animation: glass-shimmer 4s ease-in-out infinite;
+}
+
+@keyframes glass-shimmer {
+  0%, 100% { left: -100%; }
+  50% { left: 100%; }
+}
+
+/* ---- 覆盖层进入/退出 ---- */
+.call-overlay-enter-active {
+  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.call-overlay-leave-active {
+  transition: opacity 0.35s ease;
+}
+.call-overlay-enter-from,
+.call-overlay-leave-to {
+  opacity: 0;
+}
+
+/* ---- 呼吸动画 ---- */
+@keyframes breathing {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.02); opacity: 0.95; }
+}
+.animate-breathing {
+  animation: breathing 4s ease-in-out infinite;
+}
+
+/* ---- 悬浮动画 ---- */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* ---- 响铃圆环波纹 ---- */
+@keyframes call-ring-wave {
+  0% { transform: scale(1); opacity: 0.4; }
+  100% { transform: scale(2); opacity: 0; }
+}
+.call-ring-wave {
+  animation: call-ring-wave 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.call-ring-wave-delay {
+  animation: call-ring-wave 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite 0.8s;
+}
+.call-ring-wave-delay2 {
+  animation: call-ring-wave 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite 1.6s;
+}
+
+/* ---- 接听按钮脉冲 ---- */
+@keyframes call-accept-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(52, 199, 89, 0.35); }
+  50% { box-shadow: 0 0 0 14px rgba(52, 199, 89, 0); }
+}
+.call-accept-pulse {
+  animation: call-accept-pulse 2s ease-in-out infinite;
+}
+
+/* ---- 字幕淡入 ---- */
+@keyframes subtitle-fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.subtitle-fade-in {
+  animation: subtitle-fade-in 0.35s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+/* ---- 波形动画 ---- */
+@keyframes waveform-bar {
+  0%, 100% { height: 15%; opacity: 0.35; }
+  50% { height: 80%; opacity: 0.9; }
+}
+.waveform-bar {
+  animation: waveform-bar 1s ease-in-out infinite;
+}
+
+/* ---- 精灵说话微动 ---- */
+@keyframes sprite-speaking {
+  0%, 100% { transform: translateY(0) scale(1); }
+  25% { transform: translateY(-2px) scale(1.003); }
+  75% { transform: translateY(1px) scale(0.997); }
+}
+.sprite-speaking {
+  animation: sprite-speaking 1.2s ease-in-out infinite;
+}
+
+/* ---- 情绪切换 ---- */
+@keyframes emotion-shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-3px); }
+  40% { transform: translateX(3px); }
+  60% { transform: translateX(-2px); }
+  80% { transform: translateX(1px); }
+}
+.call-emotion-shake {
+  animation: emotion-shake 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+
+@keyframes emotion-jump {
+  0%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-12px); }
+  60% { transform: translateY(-6px); }
+}
+.call-emotion-jump {
+  animation: emotion-jump 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes emotion-bounce {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.06); }
+  60% { transform: scale(0.97); }
+  100% { transform: scale(1); }
+}
+.call-emotion-bounce {
+  animation: emotion-bounce 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* ---- 通话结束 ---- */
+@keyframes call-fade-out {
+  from { opacity: 1; filter: blur(0); }
+  to { opacity: 0; filter: blur(8px); }
+}
+.call-fade-out {
+  animation: call-fade-out 0.8s ease forwards;
+}
+
+/* ---- 文本输入栏 ---- */
+@keyframes text-input-slide {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.text-input-slide {
+  animation: text-input-slide 0.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* ---- PiP 入场 ---- */
+@keyframes pip-entrance {
+  0% { opacity: 0; transform: scale(0.4) translateY(-12px); }
+  70% { opacity: 1; transform: scale(1.03) translateY(0); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+.pip-entrance {
+  animation: pip-entrance 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  animation-delay: 0.25s;
+}
+
+/* ---- 模式切换标签 ---- */
+@keyframes mode-switch {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.mode-switch-enter {
+  animation: mode-switch 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* ---- 语音环形波纹 ---- */
+@keyframes voice-ring {
+  0% { transform: scale(1); opacity: 0.15; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+.voice-ring {
+  animation: voice-ring 2s ease-out infinite;
+}
+.voice-ring-delay {
+  animation: voice-ring 2s ease-out infinite 0.7s;
+}
+.voice-ring-delay2 {
+  animation: voice-ring 2s ease-out infinite 1.4s;
+}
+
+/* ============================================
+   控制栏 — 液态玻璃 + 呼吸 + Q弹
+   ============================================ */
+
+/* ---- 控制栏入场（弹性上滑） ---- */
+@keyframes ctrl-bar-entrance {
+  0%   { transform: translateY(36px); opacity: 0; }
+  55%  { transform: translateY(-4px); opacity: 1; }
+  75%  { transform: translateY(2px); }
+  100% { transform: translateY(0); }
+}
+.ctrl-bar-entrance {
+  animation: ctrl-bar-entrance 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: 0.12s;
+}
+
+/* ---- 控制栏底板（深层液态玻璃） ---- */
+.call-ctrl-bar {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.015) 100%
+  );
+  backdrop-filter: blur(40px) saturate(1.5);
+  -webkit-backdrop-filter: blur(40px) saturate(1.5);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.07),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.08),
+    0 -4px 24px rgba(0, 0, 0, 0.1),
+    0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* ---- 按钮包装器 ---- */
+.ctrl-btn-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 56px;
+}
+.ctrl-label {
+  font-size: 9px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.28);
+  transition: color 0.3s ease;
+}
+
+/* ---- 液态玻璃按钮（折射 + 内发光 + 深度阴影） ---- */
+.ctrl-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.75);
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.1),
+    inset 0 -0.5px 1px rgba(0, 0, 0, 0.06),
+    0 4px 12px rgba(0, 0, 0, 0.15),
+    0 1px 3px rgba(0, 0, 0, 0.1);
+  /* Q弹弹簧回弹曲线 */
+  transition:
+    transform 0.55s cubic-bezier(0.34, 1.56, 0.64, 1),
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease;
+  will-change: transform, scale;
+}
+.ctrl-btn:active {
+  transform: scale(0.78);
+  transition-duration: 0.06s;
+  transition-timing-function: ease-out;
+}
+
+/* 激活态（更亮的液态玻璃） */
+.ctrl-btn-on {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.12) 100%
+  );
+  border-color: rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 1);
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.22),
+    0 0 16px rgba(255, 255, 255, 0.06),
+    0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ---- 按钮呼吸（scale 独立属性，不干扰 transform 弹簧） ---- */
+@keyframes ctrl-btn-breathe {
+  0%, 100% { scale: 1; }
+  50%      { scale: 1.045; }
+}
+.ctrl-btn-breathe {
+  animation: ctrl-btn-breathe 3.8s ease-in-out infinite;
+}
+
+/* ---- 挂断按钮（悬浮 + 红色液态玻璃） ---- */
+.hangup-btn {
+  position: relative;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    145deg,
+    #ff5252 0%,
+    #e03030 45%,
+    #c62828 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    inset 0 2px 4px rgba(255, 255, 255, 0.22),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.12),
+    0 6px 20px rgba(239, 68, 68, 0.3),
+    0 2px 6px rgba(0, 0, 0, 0.2);
+  /* 向上悬浮 */
+  transform: translateY(-6px);
+  transition: transform 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
+  will-change: transform;
+}
+.hangup-btn:active {
+  transform: translateY(-6px) scale(0.8);
+  transition-duration: 0.06s;
+  transition-timing-function: ease-out;
+}
+
+/* ---- 挂断脉冲环（红色呼吸光晕） ---- */
+.hangup-ring {
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: hangup-ring-pulse 2.8s ease-in-out infinite;
+}
+@keyframes hangup-ring-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 11px rgba(239, 68, 68, 0);
+  }
+}
+
+/* ---- 对话气泡入场 ---- */
+@keyframes bubble-in {
+  0% { opacity: 0; transform: translateY(12px) scale(0.95); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.bubble-in {
+  animation: bubble-in 0.3s cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+
+/* ---- Popover 弹出 ---- */
+@keyframes popover-in {
+  0% { opacity: 0; transform: translateY(8px) scale(0.9); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.popover-in {
+  animation: popover-in 0.25s cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+.popover-enter-active {
+  transition: opacity 0.2s ease, transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.popover-leave-active {
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+.popover-enter-from,
+.popover-leave-to {
+  opacity: 0;
+  transform: translateY(8px) scale(0.9);
+}
